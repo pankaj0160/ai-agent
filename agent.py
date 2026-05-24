@@ -1,7 +1,8 @@
 from langchain_groq import ChatGroq
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate
-from config import GROQ_API_KEY
+import streamlit as st
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 from tools import get_weather, get_news
 
 
