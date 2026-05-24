@@ -2,7 +2,7 @@
 
 **Premium AI-powered dashboard** for real-time weather, live news, and travel safety intelligence — built with Streamlit + LangChain + Groq.
 
-A portfolio-quality SaaS-style experience that combines live APIs with an intelligent agent to deliver structured, beautiful, and actionable insights.
+SaaS-style experience that combines live APIs with an intelligent agent to deliver structured, beautiful, and actionable insights.
 
 ---
 
