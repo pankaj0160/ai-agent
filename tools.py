@@ -1,10 +1,12 @@
 import json
 import requests
+import streamlit as st
 from urllib.parse import urlparse
 from tavily import TavilyClient
 from langchain.tools import tool
-from config import OPENWEATHER_API_KEY, TAVILY_API_KEY
 
+OPENWEATHER_API_KEY = st.secrets["OPENWEATHER_API_KEY"]
+TAVILY_API_KEY = st.secrets["TAVILY_API_KEY"]
 
 tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
 
@@ -65,16 +67,19 @@ def get_news(topic: str) -> str:
             return json.dumps({"topic": topic, "news": []})
 
         news_items = []
+
         for item in results:
             url = item.get("url", "")
             domain = "Source"
+
             try:
                 if url:
                     domain = urlparse(url).netloc.replace("www.", "")
-            except Exception:
+            except:
                 pass
 
             content = item.get("content", "")
+
             news_items.append({
                 "title": item.get("title", "No title"),
                 "summary": content[:280] + ("..." if len(content) > 280 else ""),
