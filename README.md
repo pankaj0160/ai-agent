@@ -192,6 +192,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-**Built with ❤️ for portfolio excellence and real-world usability.**
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
