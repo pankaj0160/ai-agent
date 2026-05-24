@@ -1,0 +1,13 @@
+# AI City Intelligence Agent
+# Premium Streamlit + LangChain + Groq + Tavily + OpenWeather Dashboard
+# Install with: pip install -r requirements.txt
+
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-groq==0.1.9
+streamlit==1.37.1
+python-dotenv==1.0.1
+pydantic==2.8.2
+requests>=2.32.0
+tavily-python>=0.5.0

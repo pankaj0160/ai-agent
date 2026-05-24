@@ -1,0 +1,14 @@
+.main {
+    background-color: #0f172a;
+    color: white;
+}
+
+.stChatMessage {
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.metric-card {
+    padding: 10px;
+    border-radius: 16px;
+}
